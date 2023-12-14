@@ -23,6 +23,19 @@ body {
   color: white;
 }
 
+.char_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  justify-content: start;
+}
+
+.characteristic {
+  font-weight: bold;
+  color: violet;
+}
+
 .select-container {
   display: flex;
   flex-direction: column;
@@ -45,8 +58,11 @@ body {
 }
 
 .catCard {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns side by side */
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   border-radius: 10px;
   background-color: #1f1f1f;
@@ -73,9 +89,15 @@ body {
 
 .descr {
   display: flex;
+  width: 80%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hidden {
+  display: none;
 }
